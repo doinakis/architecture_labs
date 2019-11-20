@@ -81,4 +81,4 @@ O _MinorCPU_ αποτελεί ένα λεπτομερές μοντέλο επε�
 
 #### Δοϊνάκης Μιχάλης 
 Για οποιαδήποτε επιδιόρθωση παρακαλώ επικοινωνίστε μαζί μου: doinakis@ece.auth.gr
-Βιβλιογραφία: [gem5.org](http://gem5.org/)
+Βιβλιογραφία: [gem5.org](http://gem5.org/), [Arm Research Starting Kit](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=3&ved=2ahUKEwjA0oi7kvblAhVFI1AKHTz-AC4QFjACegQIBBAC&url=https%3A%2F%2Fraw.githubusercontent.com%2Farm-university%2Farm-gem5-rsk%2Fmaster%2Fgem5_rsk.pdf&usg=AOvVaw1pjkMJ--WpHuBWZmcFiV3q)
