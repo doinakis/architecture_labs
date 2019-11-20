@@ -1,4 +1,4 @@
-http://www.m5sim.org/Main_Page# architecture_lab_01
+# architecture_lab_01
 ## **Πρώτο εργαστήριο αρχιτεκτονικής υπολογιστών (ΤΗΜΜΥ ΑΠΘ)** 
 
 ### Εισαγωγή
