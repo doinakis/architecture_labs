@@ -54,10 +54,14 @@
 Με τις αλλαγές στην icache δεν καταφέραμε να πετύχουμε μικρότερο CPI σε σχέση με πριν, αλλά έτσι και αλλιώς τα σφάλματα στην icache ήταν ήδη πολύ λίγα οπότε μπορούμε να την αφήσουμε και στη default τιμή της.
 
 #### SPECHMMER  
-![cache_line_size](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/spechmmer/cache_line_size.png)
-![L2](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/spechmmer/L2.png)
-![dcache](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/spechmmer/dcache.png)
-![icache](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/spechmmer/icache.png)
+![cache_line_size](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/spechmmer/cache_line_size.png)  
+Και σε αυτό το benchmark παρατηρούμε μείωση του CPI με την αύξηση του cache line size,χωρίς ωστόσο αυτή να είναι πολύ μεγάλη. Ήδη αυξάνοντας το στα 256B βλέπουμε ότι τα dcache misses υποδιπλασιάστηκαν περίπου, τα icache misses είναι περίπου 6 φορές λιγότερα και παρατηρείται μικρή μείωση των L2 misses, σε σχέση με τα default values. 
+![L2](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/spechmmer/L2.png)  
+Οι αλλαγές στην L2 cache δεν έφεραν καμία αλλαγή στην απόδοση.Για τα επόμενα becnhmarks κρατήσαμε το cache line size στα 256B και την L2 cache στα 512kB με 4-way assoc,αν και μετά από σκέψη θα ήταν καλύτερα να είχαμε κρατήσει την L2 στα 1MB με 1-way assoc,γιατί ίσως ήταν πιο φθηνή λύση. 
+![dcache](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/spechmmer/dcache.png)  
+Με τις αλλαγές στη dcache,στην καλύτερη περίπτωση, πετύχαμε σχεδόν ίδιο CPI αλλά αυξήσαμε και τα σφάλματα στην L2 κατα 5%. 
+![icache](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/spechmmer/icache.png)  
+Στα benchmarks για τη icache καταλήξαμε σε ακριβώς ίδιο CPI,με αυτό που είχαμε καταφέρει με τις αλλαγές στο cache line size, ενώ τα misses στις caches ήταν σχεδόν ίδια. 
 #### SPECLIBM  
 ![cache_line_size](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/speclibm/cache_line_size.png)
 ![L2](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/speclibm/L2.png)
