@@ -43,4 +43,28 @@
 ### Design Exploration - Βελτιστοποίηση απόδοσης  
 Το σκεπτικό μου για τη βελτιστοποίηση της απόδοσης ήταν το εξής.Αρχικά τρέχουμε τις προσσομοιώσεις, με διαφορετικά cache line size κάθε φορά(32,64,128,256),αφήνοντας τις άλλες τιμές στο default, και παρατηρούμε πώς επηρεάζει το CPI αλλά και τα misses στις caches.Ταυτόχρονα,αφού παρατηρήθηκε από τα διαγράμματα παραπάνω ότι τα misses στην L2 είναι περισσότερα, έτρεξα ξανά τα becnmarks με διαφορετικά L2 sizes και associativities με τις άλλες τιμές στο default.Έποιτα, αφού βρήκα ποιες τιμές ελαχιστοποιούν το CPI για καθε benchmark τις χρησιμοποίησα για τα benchmark που εκτέλεσα για τις instruction και data caches. Τα αποτελέσματα παρουσιάζονται παρακάτω για κάθε benchmark ξεχωριστά. 
 
-#### SPECBZIP
+#### SPECBZIP  
+![cache_line_size](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/specbzip/cache_line_size.png)
+![L2](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/specbzip/L2.png)
+![dcache](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/specbzip/dcache.png)
+![icache](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/specbzip/icache.png)
+#### SPECHMMER  
+![cache_line_size](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/spechmmer/cache_line_size.png)
+![L2](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/spechmmer/L2.png)
+![dcache](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/spechmmer/dcache.png)
+![icache](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/spechmmer/icache.png)
+#### SPECLIBM  
+![cache_line_size](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/speclibm/cache_line_size.png)
+![L2](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/speclibm/L2.png)
+![dcache](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/speclibm/dcache.png)
+![icache](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/speclibm/icache.png)
+#### SPECMCF
+![cache_line_size](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/specmcf/cache_line_size.png)
+![L2](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/specmcf/L2.png)
+![dcache](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/specmcf/dcache.png)
+![icache](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/specmcf/icache.png)
+#### SPECSJENG
+![cache_line_size](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/specsjeng/cache_line_size.png)
+![L2](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/specsjeng/L2.png)
+![dcache](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/specsjeng/dcache.png)
+![icache](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/specsjeng/icache.png)
