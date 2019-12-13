@@ -73,9 +73,13 @@
 Με 256B cache line size 128kB 1-way assoc L2 και 128ΚΒ 8-way assoc L1 icache πετύχαμε τα καλύτερα αποτελέσματα για το συγκεκριμένο benchmark, μειώσαμε το CPI και κρατήσαμε χαμηλά τα misses στην instruction και data cache, ωστόσο για την L2 τα misses παρέμεναν πάντα κοντά στο 1. 
 #### SPECMCF
 ![cache_line_size](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/specmcf/cache_line_size.png)  
-![L2](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/specmcf/L2.png)
-![dcache](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/specmcf/dcache.png)
-![icache](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/specmcf/icache.png)
+Σε αυτό το benchmark η μείωση του CPI στα 32Β ήταν αυτή που οδήγησε στην μείωση του CPI, αύξησε ωστόσο τα miss rates στην L2 κατα 10%.
+![L2](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/specmcf/L2.png)  
+Οι αλλαγές στην L2 δεν έφεραν σημαντική βελτίωση σε σχέση με τις default τιμές. 
+![dcache](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/specmcf/dcache.png)  
+Ούτε και οι αλλαγές στη dcache δεν έφεραν σημαντική βελτίωση στην απόδοση. 
+![icache](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/specmcf/icache.png)  
+Με αλλαγές στο icache καταφέραμε να πάμε το CPI στο 1,17843, όμως τα misses στην L2 από 5,5046% πήγαν στο 82,9483%.Αν στόχος μας είναι μόνο το ελάχιστο CPI η τελευταία αλλαγή στη icache είναι αυτή που το καταφέρνει. 
 #### SPECSJENG
 ![cache_line_size](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/specsjeng/cache_line_size.png) 
 Όπως φαίνεται και από τα διαγράμματα το cache line size επηρεάζει το CPI, αυξάνοντας το καταφέραμε σχεδόν να υποδιπλασιάσουμε το αρχικό CPI.
