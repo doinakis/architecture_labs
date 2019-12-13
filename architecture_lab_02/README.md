@@ -19,9 +19,7 @@
 
 Και τα πέντε benchmarks τρέχουν για τον ίδιο αριθμό εντολών, και όπως φαίνεται από το διάγραμμα των χρόνων εκτέλεσης το specsjeng είναι αυτό που θα έκανε την περισσότερη ώρα να ολοκληρωθεί.  
 ![cache misses_default](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/default/default.png)
-
-  
-Γίνεται λοιπόν φανερό ότι misses συμβαίνουν πολύ περισσότερα στην l2 cache σε όλα τα benchmarks, σε σχέση με τα icache και dcache misses, ενώ η διαφορά ανάμεσα στα τελευταία είναι αρκετά μικρότερη.  
+Από τα παραπάνω διαγράμματα παρατηρούμε ότι τα speclibm και specsjeng είναι τα benchmarks με το μεγαλύτερο CPI, αλλά και αυτά που έχουν περισσότερα data cache misses αλλά και l2 cache misses (κοντά στο 99.99%), σε σχέση με τα άλλα.Όσον αφορά τα misses στην instruction cache, στα περισσότερα το ποσοστό είναι πολύ χαμηλό(μηδαμινό)  ενώ στο specmcf φτάνει το 2.36%. Γίνεται, λοιπόν, φανερή η εξάρτηση του CPI τόσο απο τη data cache όσο και απο την L2 cache, αλλά αυτό θα φανεί καλύτερα και παρακάτω με την εκτέλεση των benchmarks για διαφορετικές τιμές κάθε φορά.    
 
 ### CPU clock και System clock
-Αναζητώντας πληροφορίες για το ρολόι παρατηρούμε 2 εισαγωγές, μία για system.clk_domain.clock που χρονίζεται στο 1GHz και μία cpu_cluster.clk_domain.clock που χρονίζεται στα 2GHz.To **system.clk_domain.clock** 
+Αναζητώντας πληροφορίες για το ρολόι παρατηρούμε 2 εισαγωγές, μία για system.clk_domain.clock που χρονίζεται στο 1GHz και μία cpu_cluster.clk_domain.clock που χρονίζεται στα 2GHz.To **system.clk_domain.clock**. 
