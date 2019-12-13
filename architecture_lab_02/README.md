@@ -19,12 +19,7 @@
 
 Και τα πέντε benchmarks τρέχουν για τον ίδιο αριθμό εντολών, και όπως φαίνεται από το διάγραμμα των χρόνων εκτέλεσης το specsjeng είναι αυτό που θα έκανε την περισσότερη ώρα να ολοκληρωθεί.  
 ![cache misses_default](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/default/default.png)
-![cache misses](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/cache_misses.jpeg)  
 
-Από το δεύτερο διάγραμμα βλέπουμε ότι σχεδόν για όλα τα benchmarks (εκτός του specmcf) τα miss rates για την instruction cache είναι πάρα πολύ λίγα,πολύ κοντά στο μηδέν, σε σημείο που είναι δύσκολο να τα διακρίνουμε στο διάγραμμα.Οι τιμές που δεν φαίνοντα είναι οι εξή:
-* 0.000077 icache misses για το specbzip 
-* 0.001637 dcache misses για το spechmmer
-* 0.023612 icache misses για το specmcf  
   
 Γίνεται λοιπόν φανερό ότι misses συμβαίνουν πολύ περισσότερα στην l2 cache σε όλα τα benchmarks, σε σχέση με τα icache και dcache misses, ενώ η διαφορά ανάμεσα στα τελευταία είναι αρκετά μικρότερη.  
 
