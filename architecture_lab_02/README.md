@@ -89,4 +89,7 @@
 Και οι αλλαγές στη dcache δεν σημειώνουν μεγάλες στην απόδοση.
 ![icache](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/specsjeng/icache.png)  
 Οι αλλαγές στη icache δεν επηρεάζουν το CPI αλλά μπορούν να μειώσουν κατά πολύ το icache miss rate. 
+### Κόστος Απόδοσης και Βελτιστοποίηση κόστους/απόδοσης   
 
+Για οποιαδήποτε επιδιόρθωση παρακαλώ επικοινωνίστε μαζί μου: doinakis@ece.auth.gr  
+Βιβλιογραφία: [gem5.org](http://gem5.org/), [m5sim.org](http://www.m5sim.org/Main_Page),[https://www.spec.org/cpu2006/](https://www.spec.org/cpu2006/)
