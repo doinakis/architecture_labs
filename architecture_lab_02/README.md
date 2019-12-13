@@ -68,16 +68,21 @@
 ![L2](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/speclibm/L2.png)  
 Ακόμα και με τις αλλαγές στην L2 η διαφορά στην απόδοση είναι σχεδόν μηδαμινή,και τα misses παραμένουν ίδια σε όλες τις μετρήσεις. Για τα παρακάτω benchmarks χρησιμοποιήθηκαν 256B cache line size και 4MB 1-way assoc L2 cache. 
 ![dcache](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/speclibm/dcache.png)  
-Οι αλλαγές στο dcahche δεν έφεραν κάποια βελτίωση στην απόδοση. 
+Οι αλλαγές στη dcache δεν έφεραν κάποια βελτίωση στην απόδοση. 
 ![icache](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/speclibm/icache.png) 
 Με 256B cache line size 128kB 1-way assoc L2 και 128ΚΒ 8-way assoc L1 icache πετύχαμε τα καλύτερα αποτελέσματα για το συγκεκριμένο benchmark, μειώσαμε το CPI και κρατήσαμε χαμηλά τα misses στην instruction και data cache, ωστόσο για την L2 τα misses παρέμεναν πάντα κοντά στο 1. 
 #### SPECMCF
-![cache_line_size](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/specmcf/cache_line_size.png)
+![cache_line_size](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/specmcf/cache_line_size.png)  
 ![L2](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/specmcf/L2.png)
 ![dcache](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/specmcf/dcache.png)
 ![icache](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/specmcf/icache.png)
 #### SPECSJENG
-![cache_line_size](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/specsjeng/cache_line_size.png)
-![L2](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/specsjeng/L2.png)
-![dcache](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/specsjeng/dcache.png)
-![icache](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/specsjeng/icache.png)
+![cache_line_size](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/specsjeng/cache_line_size.png) 
+Όπως φαίνεται και από τα διαγράμματα το cache line size επηρεάζει το CPI, αυξάνοντας το καταφέραμε σχεδόν να υποδιπλασιάσουμε το αρχικό CPI.
+![L2](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/specsjeng/L2.png)  
+Οι αλλαγές στην L2 δεν επέφεραν σημαντικές βελτιώσεις στην απόδοση.Τα παρακάτω benchmarks εκτελέστηκαν για cache line size 256B και 4MB 1-way assoc L2 cache. 
+![dcache](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/specsjeng/dcache.png)  
+Και οι αλλαγές στη dcache δεν σημειώνουν μεγάλες στην απόδοση.
+![icache](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/specsjeng/icache.png)  
+Οι αλλαγές στη icache δεν επηρεάζουν το CPI αλλά μπορούν να μειώσουν κατά πολύ το icache miss rate. 
+
