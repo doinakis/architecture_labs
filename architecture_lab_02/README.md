@@ -86,7 +86,7 @@
 ![L2](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/specsjeng/L2.png)  
 Οι αλλαγές στην L2 δεν επέφεραν σημαντικές βελτιώσεις στην απόδοση.Τα παρακάτω benchmarks εκτελέστηκαν για cache line size 256B και 4MB 1-way assoc L2 cache. 
 ![dcache](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/specsjeng/dcache.png)  
-Και οι αλλαγές στη dcache δεν σημειώνουν μεγάλες στην απόδοση.
+Και οι αλλαγές στη dcache δεν σημειώνουν μεγάλες αλλαγές στην απόδοση.
 ![icache](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/specsjeng/icache.png)  
 Οι αλλαγές στη icache δεν επηρεάζουν το CPI αλλά μπορούν να μειώσουν κατά πολύ το icache miss rate. 
 ### Κόστος Απόδοσης και Βελτιστοποίηση κόστους/απόδοσης  
