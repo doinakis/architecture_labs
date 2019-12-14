@@ -84,7 +84,7 @@
 ![cache_line_size](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/specsjeng/cache_line_size.png) 
 Όπως φαίνεται και από τα διαγράμματα το cache line size επηρεάζει το CPI, αυξάνοντας το καταφέραμε σχεδόν να υποδιπλασιάσουμε το αρχικό CPI.
 ![L2](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/specsjeng/L2.png)  
-Οι αλλαγές στην L2 δεν επέφεραν σημαντικές βελτιώσεις στην απόδοση.Τα παρακάτω benchmarks εκτελέστηκαν για cache line size 256B και 4MB 1-way assoc L2 cache. 
+Οι αλλαγές στην L2 δεν επέφεραν σημαντικές βελτιώσεις στην απόδοση.Τα παρακάτω benchmarks εκτελέστηκαν για cache line size 256B και 4MB 2-way assoc L2 cache. 
 ![dcache](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/specsjeng/dcache.png)  
 Και οι αλλαγές στη dcache δεν σημειώνουν μεγάλες αλλαγές στην απόδοση.
 ![icache](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/specsjeng/icache.png)  
@@ -112,6 +112,15 @@
 | SPECLIBM(CLS)      | 32kB     | 64kB     |  2     |   2    |  2MB    |   8   | 3,493415 |       64        | 3442,17 |
 | SPECLIBM(Dcache)   | 32kB     | 16kB     |  2     |   2    |  4MB    |   1   | 1,989325 |       256       | 4341,37 |
 | SPECLIBM(Icache)   | 16kB     | 64kB     |  1     |   2    |  4MB    |   1   | 1,989360 |       256       | 4653,11 |
+| SPECMCF(DEFAULT)   | 32kB     | 64kB     |  2     |   2    |  2MB    |   8   | 1,299095 |       64        | 1280,04 |
+| SPECMCF(L2)        | 32kB     | 64kB     |  2     |   2    |  2MB    |   2   | 1,299192 |       64        | 1272,34 |
+| SPECMCF(CLS)       | 32kB     | 64kB     |  2     |   2    |  2MB    |   8   | 1,260085 |       32        | 939,18  |
+| SPECMCF(Dcache)    | 32kB     | 16kB     |  2     |   2    |  4MB    |   1   | 1,270126 |       32        | 638,02  |
+| SPECMCF(Icache)    | 16kB     | 64kB     |  4     |   2    |  4MB    |   1   | 1,189151 |       32        | 795,54  |
+| SPECSJENG(DEFAULT) | 32kB     | 64kB     |  2     |   2    |  2MB    |   8   | 10,270554|       64        | 10119,91|
+| SPECSJENG(L2)      | 32kB     | 64kB     |  2     |   2    |  1MB    |   1   | 10,273011|       64        | 10029,88|
+| SPECSJENG(CLS)     | 32kB     | 64kB     |  2     |   2    |  2MB    |   8   | 6,799471 |       128       | 9963,49 |
+| SPECSJENG(Dcache)  | 32kB     | 16kB     |  2     |   2    |  4MB    |   2   | 5,172786 |       256       |  |
 
  
 
