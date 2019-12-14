@@ -128,5 +128,5 @@
 Όλα τα αρχεία που προέκυψαν και χρησιμοποιήθηκαν σε αυτή την εργασία,bash scripts stats κτλ, υπάρχουν στους φακέλους του repository.
  
 
-Για οποιαδήποτε επιδιόρθωση παρακαλώ επικοινωνείστε μαζί μου: doinakis@ece.auth.gr  
+Για οποιαδήποτε επιδιόρθωση παρακαλώ επικοινωνήστε μαζί μου: doinakis@ece.auth.gr  
 Βιβλιογραφία: [gem5.org](http://gem5.org/), [m5sim.org](http://www.m5sim.org/Main_Page),[https://www.spec.org/cpu2006/](https://www.spec.org/cpu2006/)
