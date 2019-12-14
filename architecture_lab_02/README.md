@@ -90,7 +90,8 @@
 ![icache](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/diagrams/specsjeng/icache.png)  
 Οι αλλαγές στη icache δεν επηρεάζουν το CPI αλλά μπορούν να μειώσουν κατά πολύ το icache miss rate. 
 ### Κόστος Απόδοσης και Βελτιστοποίηση κόστους/απόδοσης  
-![cost_function](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/cost_function.png)
+![cost_function](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_02/cost_function.png)  
+όπου L1isize,L1dsize,assoc1,assoc2,L2size,assocCPI είναι το μέγεθος της instruction cache,το μέγεθος της data cache, το assoc της icache, το assoc της dcache, το μέγεθος της L2 cache, το associativity της L2 cache, και οι κύκλοι που χρειάζονται ανά εντολή, αντίστοιχα. Όπου a και b είναι σταθερές για τις οποίες πρέπει να ισχύει a>b. Εγώ τις έθεσα αυθαίρετα a=5 και b=2.   
 
 Για οποιαδήποτε επιδιόρθωση παρακαλώ επικοινωνίστε μαζί μου: doinakis@ece.auth.gr  
 Βιβλιογραφία: [gem5.org](http://gem5.org/), [m5sim.org](http://www.m5sim.org/Main_Page),[https://www.spec.org/cpu2006/](https://www.spec.org/cpu2006/)
