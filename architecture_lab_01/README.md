@@ -81,5 +81,5 @@ O _MinorCPU_ αποτελεί ένα λεπτομερές μοντέλο επε�
 Τέλος, γίνεται αντιλιπτό πως το _pipeline_του _MinorCPU_ του δίνει πλεονέκτημα ακόμα και όταν αυξηθεί το ρολόι του _TimingSimpleCPU_, παραμένει περίπου δύο φορές γρηγορότερος. 
 
 
-Για οποιαδήποτε επιδιόρθωση παρακαλώ επικοινωνίστε μαζί μου: doinakis@ece.auth.gr  
+Για οποιαδήποτε επιδιόρθωση παρακαλώ επικοινωνήστε μαζί μου: doinakis@ece.auth.gr  
 Βιβλιογραφία: [gem5.org](http://gem5.org/), [Arm Research Starting Kit(PDF)](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=3&ved=2ahUKEwjA0oi7kvblAhVFI1AKHTz-AC4QFjACegQIBBAC&url=https%3A%2F%2Fraw.githubusercontent.com%2Farm-university%2Farm-gem5-rsk%2Fmaster%2Fgem5_rsk.pdf&usg=AOvVaw1pjkMJ--WpHuBWZmcFiV3q),[m5sim.org](http://www.m5sim.org/Main_Page)
