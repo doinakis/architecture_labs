@@ -36,4 +36,9 @@
 η πληροφορία βρίσκεται εύκολα στην έξοδο όταν τρέχουμε το McPAT 
 * **Delay**  
 το delay είναι ο χρόνος που απαιτήθηκε από το πρόγραμμά μας για να ολοκληρωθεί. Μπορούμε να αντλήσουμε τη πληροφορία αυτή από το αρχείο stats.txt του gem5 και είναι το sim_seconds 
-* **Energy**
+* **Energy**  
+Ο τρόπος που θα υπολογίσουμε την ενέργεια, αφού μας ζητείται να λάβουμε υπόψιν μόνο το Core και το L2 είναι ο εξής :   
+![energy_function](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_03/energy_function.png)  
+όπου CoreRuntime,L2Runtime,CoreSub,L2Sub,CoreGate,L2Gate είναι οι αντίστοιχες μεταβλητές που παίρνουμε από την εκτέλεση του McPAT και delay είναι το sim_seconds που προκύπτει από τα stats του gem5.  
+Έχοντας, λοιπόν, όλα αυτά μπορούμε να υπολογίσουμε την συνάρτηση για το EDAP ως εξής:  
+![edap_function](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_03/edap_function.png)
