@@ -44,4 +44,16 @@
 όπου CoreRuntime,L2Runtime,CoreSub,L2Sub,CoreGate,L2Gate είναι οι αντίστοιχες μεταβλητές που παίρνουμε από την εκτέλεση του McPAT και delay είναι το sim_seconds που προκύπτει από τα stats του gem5.  
 Έχοντας, λοιπόν, όλα αυτά μπορούμε να υπολογίσουμε την συνάρτηση για το EDAP ως εξής:
 
-![edap_function](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_03/edap_function.png)
+![edap_function](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_03/edap_function.png)  
+
+### Διαγράμματα σε σχέση με το Area και το Peak Power
+
+Τα διαγράμματα τα οποία παρουσιάζονται παρακάτω αφορούν το specbzip, ωστόσο σε όλα τα benchmark η συμπεριφορά είναι παρόμοια, όπως φαίνεται και από τα αποτελέσματα που υπάρχουν στους υποφακέλους του repository. Ο λόγος που δεν παρουσιάζεται για κάθε ένα benchmark ξεχωριστά είναι για εξοικονόμηση χώρου και χρόνου.Να σημειωθεί ότι στα παρακάτω διαγράμματα παρουσιάζεται το συνολικό Area του επεξεργαστή και το Peak Power, σε σχέση με τις διάφορεσ τιμές που τρέξαμε στα προηγούμενα benchmark στην 2η εργασία.  
+
+![area_peak_power_cache_line_size](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_03/diagrams/area_peak_power_cache_line_size.png)  
+Όπως ήταν αναμενόμενο, η αύξηση του cache line size οδήγησε τόσο σε αύξηση του Area όσο και σε αύξηση του Peak Power.  
+
+![area_peak_power_L2](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_03/diagrams/area_peak_power_L2.png)  Η διαφορά στην L2, τόσο στο Area όσο και στο Peak Power, είναι αισθητή κυρίως με την αύξηση του μεγέθους και όχι τόσο με την αλλαγή στο associativity της L2 cache.  
+
+![area_peak_power_dcache](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_03/diagrams/area_peak_power_dcache.png)  
+![rea_peak_power_icache](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_03/diagrams/area_peak_power_icache.png)
