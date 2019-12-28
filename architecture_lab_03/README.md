@@ -58,5 +58,7 @@
 ![area_peak_power_dcache](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_03/diagrams/area_peak_power_dcache.png)  
 ![rea_peak_power_icache](https://github.com/doinakis/architecture_lab_01/blob/master/architecture_lab_03/diagrams/area_peak_power_icache.png)  
 Για τα icache και dcache παρατηρείται και εδώ αύξηση του Area και του Peak Power με την αύξηση του assoc και του μεγέθους της αντίστοιχης cache.  
-Σχεδόν η ίδια συμπεριφορά παρουσιάζεται για όλα τα benchmarks.Τα αρχεία από τα οποία αντληθηκαν οι παραπάνω πληροφορίες, αλλά και για τα άλλα benchmarks μπορούν να βρεθούν στο φάκελο mcpat_results.  
+Σχεδόν η ίδια συμπεριφορά παρουσιάζεται για όλα τα benchmarks.Τα αρχεία από τα οποία αντληθηκαν οι παραπάνω πληροφορίες, αλλά και για τα άλλα benchmarks μπορούν να βρεθούν στο φάκελο mcpat_results.
+### Καλύτερο EDAP για κάθε benchmark
+
 
